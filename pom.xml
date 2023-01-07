@@ -55,6 +55,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.thetransactioncompany</groupId>
+            <artifactId>jsonrpc2-server</artifactId>
+            <version>1.11</version>
+        </dependency>
     </dependencies>
 
     <build>
