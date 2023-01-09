@@ -91,4 +91,11 @@ public class UserController {
         }
         return user;
     }
+
+    @GetMapping("/user/email/{email}")
+    public User getUserByEmail(@PathVariable String email) {
+        User user =  userRepository.findByEmail(email)
+                .orElseThrow(() -> new ResourceNotFoundEmailException(email));
+        return user;
+    }
 }
